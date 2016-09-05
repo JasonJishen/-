@@ -18,7 +18,7 @@ public class Solution {
         }
         
         if(root.left == null && root.right == null){
-            return 1;
+            return 1;//这里的1是自己的1
         }
         
         return Math.min(getMin(root.left),getMin(root.right))+1;//+1加在了min括号里面min(getMin(root.left),getMin(root.right)+1),这个加1很重要不然没法完成递归
